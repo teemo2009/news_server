@@ -182,7 +182,7 @@ class User extends CI_Controller
         $smtpserverport = 25; //SMTP服务器端口，一般为25
         $smtpusermail = "h121baby@sina.cn"; //SMTP服务器的用户邮箱，如xxx@163.com
         $smtpuser = "h121baby@sina.cn"; //SMTP服务器的用户帐号xxx@163.com
-        $smtppass = "woshipis"; //SMTP服务器的用户密码
+        $smtppass = ""; //SMTP服务器的用户密码
         $smtp = $this->mSmtp->smtp($smtpserver, $smtpserverport, true, $smtpuser, $smtppass); //实例化邮件类
         $emailtype = "HTML"; //信件类型，文本:text；网页：HTML
         $smtpemailto = $email; //接收邮件方，本例为注册用户的Email
